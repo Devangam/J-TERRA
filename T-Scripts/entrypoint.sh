@@ -6,8 +6,8 @@ sudo systemctl start docker
 sudo usermod -aG docker ubuntu
 sudo systemctl restart docker
 sudo apt install maven -y
-git clone https://github.com/Devangam/jpetstore-6.git
-cd jpetstore-6
+git clone https://github.com/Devangam/secretsanta-generator.git
+cd secretsanta-generator
 mvn package
-docker build -t devangam/petstore .
-docker run -d -p 8080:8080 devangam/petstore
+docker build -t devangam/secretsanta-generator .
+docker run -d -p 8080:8080 devangam/secretsanta-generator
