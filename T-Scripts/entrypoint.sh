@@ -9,5 +9,5 @@ udo apt install maven -y
 git clone https://github.com/Devangam/jpetstore-6.git
 cd /jpetstore
 mvn package
-docker build -t petsore .
-docker run -d -p 8080:8080 devangam/petsore
+docker build -t petstore .
+docker run -d -p 8080:8080 devangam/petstore
