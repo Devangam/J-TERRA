@@ -6,7 +6,7 @@ sudo systemctl start docker
 sudo usermod -aG docker ubuntu
 sudo systemctl restart docker
 udo apt install maven -y
-git clone https://github.com/jaiswaladi246/jpetstore-6.git 
+git clone https://github.com/Devangam/jpetstore-6.git
 cd /jpetstore
 mvn package
 docker build -t petsore .
