@@ -10,4 +10,5 @@ git clone https://github.com/jaiswaladi246/jpetstore-6.git
 cd /jpetstore
 mvn package
 docker build -t petsore .
-docker run -d -p 8080:8080 devangam/petsore
+docker run -d -p 8080:8080 petsore
+docker push devangam/petsore
