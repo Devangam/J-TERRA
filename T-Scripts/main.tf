@@ -119,7 +119,7 @@ resource "aws_default_security_group" "default-sg" {
 
 resource "aws_key_pair" "ssh-key" {
   key_name   = "myapp-key"
-  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICdKjwdU9YNStDo8Sf57cPgXmS1BKCWxhnLjl09bhtD1 ubuntu@ip-172-31-33-101"
+  public_key = "file(var.public_key_location)"
 
 }
 
